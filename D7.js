@@ -252,10 +252,24 @@ console.log(cassette(movies));
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+function nomiFilm(movies) {
+  let titoli = [];
+  titoli = movies.map((nome) => nome.Title);
+  return titoli;
+}
+console.log(nomiFilm(movies));
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+function currentFilm(movies) {
+  let millenium = [];
+  millenium = movies
+    .filter((movies) => movies.Year >= 2000)
+    .map((movies) => movies.Title);
+  return millenium;
+}
+console.log(currentFilm(movies));
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
