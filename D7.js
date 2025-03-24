@@ -278,6 +278,17 @@ console.log(currentFilm(movies));
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+function trovami(movies, imdbID) {
+  let nomeFilm = movies.find((movie) => movie.imdbID === imdbID);
+  return nomeFilm;
+}
+console.log(trovami(movies, "tt0848228"));
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+function trovanno(movies, Year) {
+  let trovindice = movies.findIndex((movie) => movie.Year === Year);
+  return trovindice;
+}
+console.log(trovanno(movies, 2019));
