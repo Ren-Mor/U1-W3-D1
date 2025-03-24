@@ -33,13 +33,13 @@ console.log(RandomArr());
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
-const nums = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-];
 function getEven(array) {
   return array.filter((num) => num % 2 === 0);
 }
 
+const nums = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
 const evenNums = getEven(nums);
 
 console.log(evenNums);
@@ -47,8 +47,6 @@ console.log(evenNums);
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-
-const numb = [71, 32, 93];
 
 function arrSum(array) {
   let sum = 0;
@@ -58,6 +56,7 @@ function arrSum(array) {
   return sum;
 }
 
+const numb = [71, 32, 93];
 const result = arrSum(numb);
 console.log(result);
 
@@ -69,13 +68,12 @@ console.log(result);
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-const numbs = [1, 2, 3, 4, 5, 6, 7, 8];
-const add = 4;
-
 function increase(arr, n) {
   return arr.map((num) => num + n);
 }
 
+const numbs = [1, 2, 3, 4, 5, 6, 7, 8];
+const add = 4;
 const final = increase(numbs, add);
 console.log(final);
 
